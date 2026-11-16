@@ -144,19 +144,35 @@ body {
 /* ---------- PART 1: Normal Flow & Float ---------- */
 
 /* Build A: Style the bio box (Block 1 skills) */
-
+.bio {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  border: 3px solid #1F3864;
+  display: flow-root;
+}
 
 /* Build B: Float the photo */
-
+.officer-photo {
+  float: left;
+  margin: 0 16px 8px 0;
+  border-radius: 50%;
+  border:  3px solid #CADCFC;
+}
 
 /* Task 1: Float the second photo to the right */
-
+.bio-right .officer-photo {
+  float: right;
+  margin: 0 0 8px 16px;
+}
 
 /* Task 2: Contain the floats */
 
 
 /* Task 3: Clear the office hours */
-
+.office-hours {
+  clear: both;
+}
 
 /* Task 4: Round photos */
 
