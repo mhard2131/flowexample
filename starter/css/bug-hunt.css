@@ -111,6 +111,7 @@ main {
 
 /* Bug 1: The badge flies to the corner of the PAGE instead of the card. */
 .card-a {
+  position: relative;
 }
 
 
@@ -118,7 +119,7 @@ main {
    (Someone added the line below "to keep things tidy.") */
 .card-b {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 
@@ -131,7 +132,7 @@ main {
 /* Bug 4: The header has position: sticky and top: 0, but it scrolls away.
    Hint: the problem is NOT in the header's own rule. Look at its parent. */
 .page-wrap {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .board-header {
