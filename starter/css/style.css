@@ -84,6 +84,7 @@ body {
   border-left: 10px solid #CADCFC;
   margin: 0 auto 24px;
   margin-top: 16px;
+  position: relative;
 }
 
 /* Task 4: Shape the date tag */
@@ -183,13 +184,29 @@ body {
 /* ---------- PART 2: Positioning ---------- */
 
 /* Build C: The NEW badge */
-
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  padding: 4px 12px;
+}
 
 /* Task 6: Sticky header */
-
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
 /* Task 7: Fixed Join button */
-
+.join-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  z-index: 11;
+}
 
 /* Task 8: Don't cover the footer */
 
